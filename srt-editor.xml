@@ -38,7 +38,7 @@
   </Data>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <Version></Version>
-  <Icon>https://raw.githubusercontent.com/JvSomeren/unraid-templates/master/icons/go-srt-editor.png</Icon>
+  <Icon>https://raw.githubusercontent.com/JvSomeren/unraid-templates/master/icons/go-srt-offsetter.png</Icon>
   <Beta>False</Beta>
   <Category>Network:Other</Category>
   <Date>2020-02-28</Date>
