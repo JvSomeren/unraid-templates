@@ -22,17 +22,17 @@
   <Data>
     <Volume>
       <HostDir>/mnt/user/plex/movies</HostDir>
-      <ContainerDir>/media/</ContainerDir>
+      <ContainerDir>/files/movies</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
       <HostDir>/mnt/user/plex/movies-4k</HostDir>
-      <ContainerDir>/media/</ContainerDir>
+      <ContainerDir>/files/movies-4k</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
       <HostDir>/mnt/user/plex/tv-shows</HostDir>
-      <ContainerDir>/media/</ContainerDir>
+      <ContainerDir>/files/tv-shows</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
