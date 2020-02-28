@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>go-srt-offsetter</Name>
+  <Description></Description>
+  <Registry>https://hub.docker.com/r/jvsomeren/go-srt-offsetter</Registry>
+  <GitHub>https://github.com/JvSomeren/go-srt-offsetter</GitHub>
+  <Repository>jvsomeren/go-srt-offsetter</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/plex/movies</HostDir>
+      <ContainerDir>/media/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/plex/movies-4k</HostDir>
+      <ContainerDir>/media/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/plex/tv-shows</HostDir>
+      <ContainerDir>/media/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <Version></Version>
+  <Icon>https://raw.githubusercontent.com/JvSomeren/unraid-templates/master/icons/go-srt-editor.png</Icon>
+  <Beta>False</Beta>
+  <Category>Network:Other</Category>
+  <Date>2020-02-28</Date>
+</Container>
