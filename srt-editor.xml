@@ -18,6 +18,10 @@
     </Publish>
   </Networking>
   <Environment>
+    <Variable>
+      <Name>BASE_PATH</Name>
+      <Value>/</Value>
+    </Variable>
   </Environment>
   <Data>
     <Volume>
