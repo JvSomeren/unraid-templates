@@ -19,8 +19,20 @@
   </Networking>
   <Environment>
     <Variable>
-      <Name>BASE_PATH</Name>
-      <Value>/</Value>
+      <Name>DATABASE_URL</Name>
+      <Value>postgresql://username:password@host/database</Value>
+    </Variable>
+    <Variable>
+      <Name>LOG_LEVEL</Name>
+      <Value>Info</Value>
+    </Variable>
+    <Variable>
+      <Name>TRAKT_CLIENT_ID</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>TRAKT_CLIENT_SECRET</Name>
+      <Value></Value>
     </Variable>
   </Environment>
   <Data>
