@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Scrobbl.io</Name>
+  <Description></Description>
+  <Registry>https://hub.docker.com/repository/docker/jvsomeren/scrobbl.io</Registry>
+  <GitHub>https://github.com/JvSomeren/scrobbl.io</GitHub>
+  <Repository>jvsomeren/scrobbl.io</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>80</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>BASE_PATH</Name>
+      <Value>/</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/scrobbl.io</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <Version></Version>
+  <Icon>https://raw.githubusercontent.com/JvSomeren/unraid-templates/master/icons/scrobbl.io.png</Icon>
+  <Beta>False</Beta>
+  <Category>Network:Other</Category>
+  <Date>2021-03-31</Date>
+</Container>
