@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>pathe-monitor</Name>
+  <Description></Description>
+  <Registry>https://registry.gitlab.com/jvsomeren/pathe-monitor</Registry>
+  <GitHub>https://gitlab.com/JvSomeren/pathe-monitor</GitHub>
+  <Repository>https://registry.gitlab.com/jvsomeren/pathe-monitor</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>DISCORD_WEBHOOK_URL</Name>
+      <Value>https://discord.com/api/webhooks/{WEBHOOK_URL}</Value>
+    </Variable>
+    <Variable>
+      <Name>TIMEZONE</Name>
+      <Value>Europe/Amsterdam</Value>
+      <Description>Base your timezone on the ones listed here: https://docs.rs/chrono-tz/0.5.3/chrono_tz/enum.Tz.html#variants</Description>
+    </Variable>
+    <Variable>
+      <Name>LOG_LEVEL</Name>
+      <Value>Info</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/pathe-monitor</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Version></Version>
+  <Icon>https://raw.githubusercontent.com/JvSomeren/unraid-templates/master/icons/pathe-monitor.png</Icon>
+  <Beta>False</Beta>
+  <Category>Network:Other</Category>
+  <Date>2021-08-12</Date>
+</Container>
